@@ -1,0 +1,5 @@
+#reloj{
+    width: 60px;
+    display: flex;
+    border: 1px black solid;
+}
