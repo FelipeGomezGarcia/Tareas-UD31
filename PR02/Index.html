@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <script src="./JS/codigo.js"></script>
+</head>
+<body>
+    <p>Validar fecha(dd/mm/yyyy)</p>
+    <input  id="texto" type="text">
+    <button onclick="data()">Validar</button>
+
+    <div id="validacionFecha"></div>
+
+    <p>Validar correo</p>
+    <input  id="textoCorreo" type="text">
+    <button onclick="correo()">Validar</button>
+    <div id="validacionCorreo"></div>
+
+    <p>Substituir caracteres especiales (&amp;,&lt;,&quot;,&gt;)</p>
+    <input  id="texto3" type="text">
+    <button onclick="substituir()">Validar</button>
+
+    <div id="sinCaracteres"></div>
+
+    <p>Cambiar el orden de nombre y apellido</p>
+    <input  id="texto4" type="text">
+    <button onclick="cambiarOrden()">Validar</button>
+
+    <div id="validacion4"></div>
+
+    <p>Quitar etiquetas peligrosas de codgo html</p>
+    <textarea name="" id="texto5" cols="30" rows="10"></textarea>
+    <button onclick="quitarEtiquetas()">Validar</button>
+
+    <div id="validacion5"></div>
+</body>
+</html>
