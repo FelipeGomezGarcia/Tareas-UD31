@@ -1,0 +1,31 @@
+#calculadora{
+    width: 300px;
+    background-color: bisque;
+    text-align:  center;
+    border: 2px blue solid;
+}
+input{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: end;
+    border: 1px black solid;
+}
+#funciones{
+    margin: auto;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#teclas{
+    margin:auto;
+    width: 70%;
+    margin-bottom: 20px;
+}
+button{
+    width: 40px;
+}
+#funciones button{
+    width: 70px;
+    color: red;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div id="calculadora">
+        <input type="text" name="operacion" id="operacion">
+        <div id="funciones">
+            <button onclick="retr()">Retr</button>
+            <button onclick="borrar()">CE</button>
+            <button onclick="borrar()">C</button>
+        </div>
+        <div id="teclado">
+            <p>
+                <button onclick="escribirInput('7')">7</button>
+                <button onclick="escribirInput('8')">8</button>
+                <button onclick="escribirInput('9')">9</button>
+                <button onclick="escribirInput('/')">/</button>
+                <button onclick="raiz()">Raiz</button>
+            </p>
+            <p>
+                <button onclick="escribirInput('4')">4</button>
+                <button onclick="escribirInput('5')">5</button>
+                <button onclick="escribirInput('6')">6</button>
+                <button onclick="escribirInput('*')">*</button>
+                <button onclick="porcent()">%</button>
+            </p>
+            <p>
+                <button onclick="escribirInput('1')">1</button>
+                <button onclick="escribirInput('2')">2</button>
+                <button onclick="escribirInput('3')">3</button>
+                <button onclick="escribirInput('-')">-</button>
+                <button onclick="inverso()">1/x</button>
+            </p>
+            <p>
+                <button onclick="escribirInput('0')">0</button>
+                <button onclick="opuesto()">+/-</button>
+                <button onclick="escribirInput('.')">.</button>
+                <button onclick="escribirInput('+')">+</button>
+                <button onclick="operar()">=</button>
+            </p>     
+        </div>
+    </div>
+    <script type="text/javascript" src="./JS/codigo.js"></script>
+</body>
+</html>
