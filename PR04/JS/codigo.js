@@ -1,16 +1,40 @@
-window.onload = function(){ //Acciones tras cargar la página
-    
-    document.onkeydown = teclado; //función teclado disponible
-    }
-    const pantalla=document.querySelector("#operacion"); //elemento pantalla de salida
-    x="0"; //número en pantalla
-    xi=1; //iniciar número en pantalla: 1=si; 0=no;
-    coma=0; //estado coma decimal 0=no, 1=si;
-    ni=0; //número oculto o en espera.
-    op="no"; //operación en curso; "no" =  sin operación.
-    
-    //mostrar número en pantalla según se va escribiendo:
-    function escribirInput(xx) { //recoge el número pulsado en el argumento.
-        pantalla.innerHTML = xx;
-    }
 
+const pantalla=document.getElementById("operacion");
+
+function escribirInput(xx) { 
+    pantalla.value += xx;
+}
+
+function operar(){
+    pantalla.value = eval(pantalla.value);
+}
+
+function borrar(){
+    pantalla.value = "";
+}
+
+function retr(){
+    let texto = pantalla.value;
+    let longitud = texto.length;
+    pantalla.value = pantalla.value.substr(0, longitud-1);
+}
+
+function raiz(){
+    pantalla.value = Math.sqrt(pantalla.value);
+}
+
+function porcent(){
+    pantalla.value = pantalla.value/100;
+}
+
+function opuesto(){
+    let x = Number(pantalla.value);
+    let y = -x;
+    pantalla.value=String(y);
+}
+
+function inverso(){
+    let x = Number(pantalla.value);
+    let y = 1/x;
+    pantalla.value=String(y);
+}

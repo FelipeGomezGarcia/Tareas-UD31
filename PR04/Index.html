@@ -12,38 +12,38 @@
     <div id="calculadora">
         <input type="text" name="operacion" id="operacion">
         <div id="funciones">
-            <button>Retr</button>
-            <button>CE</button>
-            <button>C</button>
+            <button onclick="retr()">Retr</button>
+            <button onclick="borrar()">CE</button>
+            <button onclick="borrar()">C</button>
         </div>
         <div id="teclado">
             <p>
                 <button onclick="escribirInput('7')">7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>/</button>
-                <button>Raiz</button>
+                <button onclick="escribirInput('8')">8</button>
+                <button onclick="escribirInput('9')">9</button>
+                <button onclick="escribirInput('/')">/</button>
+                <button onclick="raiz()">Raiz</button>
             </p>
             <p>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>*</button>
-                <button>%</button>
+                <button onclick="escribirInput('4')">4</button>
+                <button onclick="escribirInput('5')">5</button>
+                <button onclick="escribirInput('6')">6</button>
+                <button onclick="escribirInput('*')">*</button>
+                <button onclick="porcent()">%</button>
             </p>
             <p>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>-</button>
-                <button>1/x</button>
+                <button onclick="escribirInput('1')">1</button>
+                <button onclick="escribirInput('2')">2</button>
+                <button onclick="escribirInput('3')">3</button>
+                <button onclick="escribirInput('-')">-</button>
+                <button onclick="inverso()">1/x</button>
             </p>
             <p>
-                <button>0</button>
-                <button>+/-</button>
-                <button>.</button>
-                <button>+</button>
-                <button>=</button>
+                <button onclick="escribirInput('0')">0</button>
+                <button onclick="opuesto()">+/-</button>
+                <button onclick="escribirInput('.')">.</button>
+                <button onclick="escribirInput('+')">+</button>
+                <button onclick="operar()">=</button>
             </p>     
         </div>
     </div>
