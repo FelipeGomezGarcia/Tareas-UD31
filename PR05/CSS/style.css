@@ -1,0 +1,12 @@
+img{
+    height: 600px;
+}
+.miniatura{
+    height: 100px
+}
+#miniatura{
+    margin-right: 30px;
+}
+#contenedor{
+    display: flex;
+}
